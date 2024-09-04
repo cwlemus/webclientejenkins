@@ -1,0 +1,4 @@
+docker build --tag=webcliente .
+docker images
+docker run -d -p 8097:8097 webcliente
+docker ps -a

@@ -1,0 +1,8 @@
+# estoo es la imagen que queremos usar
+FROM openjdk:17-jdk-alpine
+# comando que copiara nuestra aplicacion en la imagen
+COPY target/webcliente-1.jar webcliente-1.jar
+#ejecutarar dentro de la imagen 
+ENTRYPOINT ["java", "-jar", "/webcliente-1.jar"]
+#expone el puerto
+EXPOSE 8097
